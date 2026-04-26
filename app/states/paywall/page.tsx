@@ -46,7 +46,7 @@ export default function PaywallPage() {
             </div>
 
             <div className="border-t border-zinc-200 bg-white px-4 py-3">
-              <button className="flex w-full items-center justify-center gap-1.5 rounded-md bg-emerald-500 px-3 py-2 text-xs font-semibold text-white shadow-sm transition hover:bg-emerald-600">
+              <button className="flex w-full items-center justify-center gap-1.5 rounded-md bg-rose-500 px-3 py-2 text-xs font-semibold text-white shadow-sm transition hover:bg-rose-600">
                 See Pro plans
                 <svg
                   width="12"

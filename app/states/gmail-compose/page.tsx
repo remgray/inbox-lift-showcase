@@ -88,8 +88,9 @@ export default function GmailComposePage() {
             </div>
           </div>
 
-          {/* Floating compose window (Gmail-style, bottom-right) */}
-          <div className="absolute right-6 bottom-0 w-[480px] overflow-hidden rounded-t-lg border border-zinc-300 bg-white shadow-2xl">
+          {/* Floating compose window — pushed away from the right side
+              so the AI drawer below doesn't overlap it in the showcase. */}
+          <div className="absolute right-[360px] bottom-0 w-[420px] overflow-hidden rounded-t-lg border border-zinc-300 bg-white shadow-2xl">
             <header className="flex items-center justify-between bg-[#404040] px-3 py-2 text-white">
               <p className="text-xs font-medium">Re: Q4 planning sync</p>
               <div className="flex items-center gap-1 text-zinc-300">
@@ -128,7 +129,7 @@ export default function GmailComposePage() {
               <div className="min-h-32 py-3 text-[13px] leading-relaxed text-zinc-800">
                 Thanks for sharing the doc — I have two questions on the
                 Vienna pilot before we lock the roadmap…
-                <span className="ml-0.5 inline-block h-3.5 w-1.5 animate-pulse bg-emerald-500 align-text-bottom" />
+                <span className="ml-0.5 inline-block h-3.5 w-1.5 animate-pulse bg-rose-500 align-text-bottom" />
               </div>
             </div>
 
@@ -138,7 +139,7 @@ export default function GmailComposePage() {
               </button>
               <div className="flex items-center gap-2 text-zinc-500">
                 <button
-                  className="inline-flex items-center gap-1 rounded-md border border-emerald-300 bg-emerald-50 px-2 py-1 text-xs font-semibold text-emerald-700 ring-1 ring-emerald-300/40"
+                  className="inline-flex items-center gap-1 rounded-md border border-rose-300 bg-rose-50 px-2 py-1 text-xs font-semibold text-rose-700 ring-1 ring-rose-300/40"
                   aria-label="Draft with InboxLift AI"
                 >
                   <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
@@ -166,7 +167,7 @@ export default function GmailComposePage() {
           <aside className="absolute top-0 right-0 h-full w-[340px] overflow-hidden border-l border-zinc-200 bg-white shadow-[0_0_40px_-10px_rgba(0,0,0,0.3)]">
             <header className="flex items-center justify-between border-b border-zinc-200 px-4 py-2.5">
               <div className="flex items-center gap-2">
-                <span className="block h-2 w-2 rounded-full bg-emerald-500" />
+                <span className="block h-2 w-2 rounded-full bg-rose-500" />
                 <span className="text-xs font-semibold text-zinc-900">
                   InboxLift · Compose
                 </span>
@@ -200,7 +201,7 @@ export default function GmailComposePage() {
                     className={
                       "rounded-full px-2.5 py-1 text-[10px] font-medium " +
                       (i === 0
-                        ? "bg-emerald-500 text-white shadow-sm"
+                        ? "bg-rose-500 text-white shadow-sm"
                         : "border border-zinc-200 bg-white text-zinc-700")
                     }
                   >
@@ -215,7 +216,7 @@ export default function GmailComposePage() {
                 <p className="text-[10px] font-semibold tracking-widest text-zinc-400 uppercase">
                   Draft
                 </p>
-                <span className="text-[10px] text-emerald-600">● 86 tokens</span>
+                <span className="text-[10px] text-rose-600">● 86 tokens</span>
               </div>
               <p className="mt-2 rounded-lg bg-zinc-50 px-3 py-2.5 text-[12px] leading-relaxed text-zinc-800">
                 Hi Anna — thanks for the doc. Two clarifications before I sign
@@ -233,7 +234,7 @@ export default function GmailComposePage() {
               <button className="rounded-md border border-zinc-200 bg-white px-2 py-1.5 text-[11px] font-medium text-zinc-700 transition hover:bg-zinc-50">
                 Copy
               </button>
-              <button className="rounded-md bg-emerald-500 px-2 py-1.5 text-[11px] font-semibold text-white shadow-sm transition hover:bg-emerald-600">
+              <button className="rounded-md bg-rose-500 px-2 py-1.5 text-[11px] font-semibold text-white shadow-sm transition hover:bg-rose-600">
                 Insert
               </button>
             </div>

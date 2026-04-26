@@ -27,7 +27,7 @@ export function PopupShell({ active, pro = false, children, compact = false }: P
       >
         <header className="flex items-center justify-between border-b border-zinc-200 px-4 py-3">
           <div className="flex items-center gap-2">
-            <span className="block h-2 w-2 rounded-full bg-emerald-500" />
+            <span className="block h-2 w-2 rounded-full bg-rose-500" />
             <span className="text-sm font-semibold text-zinc-900">
               InboxLift
             </span>
@@ -74,7 +74,7 @@ export function PopupShell({ active, pro = false, children, compact = false }: P
               >
                 {t.label}
                 {isActive && (
-                  <span className="absolute right-2 bottom-0 left-2 h-0.5 rounded-full bg-emerald-500" />
+                  <span className="absolute right-2 bottom-0 left-2 h-0.5 rounded-full bg-rose-500" />
                 )}
               </button>
             );

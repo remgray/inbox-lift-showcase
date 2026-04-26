@@ -50,16 +50,16 @@ export default function ProTierPage() {
         {/* Left: Pro popup */}
         <PopupShell active="drafts" pro>
           <div className="flex flex-1 flex-col overflow-hidden">
-            <div className="flex items-center justify-between border-b border-zinc-200 bg-gradient-to-r from-emerald-50/70 to-teal-50/40 px-4 py-3">
+            <div className="flex items-center justify-between border-b border-zinc-200 bg-gradient-to-r from-rose-50/70 to-pink-50/40 px-4 py-3">
               <div>
-                <p className="text-[10px] font-semibold tracking-widest text-emerald-700/80 uppercase">
+                <p className="text-[10px] font-semibold tracking-widest text-rose-700/80 uppercase">
                   This month
                 </p>
                 <p className="mt-0.5 text-2xl font-bold text-zinc-900">
                   47 <span className="text-sm font-medium text-zinc-400">drafts</span>
                 </p>
               </div>
-              <span className="inline-flex items-center gap-1 rounded-full bg-emerald-500 px-2.5 py-1 text-[10px] font-semibold text-white">
+              <span className="inline-flex items-center gap-1 rounded-full bg-rose-500 px-2.5 py-1 text-[10px] font-semibold text-white">
                 <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
@@ -69,7 +69,7 @@ export default function ProTierPage() {
 
             <div className="flex items-center justify-between border-b border-zinc-200 bg-white px-4 py-2 text-xs">
               <span className="font-medium text-zinc-500">Recent drafts</span>
-              <button className="font-semibold text-emerald-600 hover:text-emerald-700">
+              <button className="font-semibold text-rose-600 hover:text-rose-700">
                 View all →
               </button>
             </div>
@@ -98,8 +98,8 @@ export default function ProTierPage() {
                     className={
                       "rounded-lg border px-3 py-2 transition " +
                       (i === 0
-                        ? "border-emerald-300 bg-emerald-50/40"
-                        : "border-zinc-200 bg-white hover:border-emerald-200")
+                        ? "border-rose-300 bg-rose-50/40"
+                        : "border-zinc-200 bg-white hover:border-rose-200")
                     }
                   >
                     <div className="flex items-center justify-between">
@@ -107,7 +107,7 @@ export default function ProTierPage() {
                         {t.name}
                       </p>
                       {t.badge && (
-                        <span className="rounded-full bg-emerald-100 px-1.5 py-0.5 text-[9px] font-semibold text-emerald-700 uppercase">
+                        <span className="rounded-full bg-rose-100 px-1.5 py-0.5 text-[9px] font-semibold text-rose-700 uppercase">
                           {t.badge}
                         </span>
                       )}
@@ -120,7 +120,7 @@ export default function ProTierPage() {
 
             <div className="flex items-center justify-between bg-white px-4 py-2 text-[11px]">
               <span className="font-medium text-zinc-500">Custom templates</span>
-              <button className="font-semibold text-emerald-600 hover:text-emerald-700">
+              <button className="font-semibold text-rose-600 hover:text-rose-700">
                 + New
               </button>
             </div>
@@ -129,7 +129,7 @@ export default function ProTierPage() {
               {templates.map((t) => (
                 <div
                   key={t.title}
-                  className="cursor-pointer rounded-lg border border-zinc-200 bg-white p-2.5 transition hover:border-emerald-300"
+                  className="cursor-pointer rounded-lg border border-zinc-200 bg-white p-2.5 transition hover:border-rose-300"
                 >
                   <div className="flex items-center justify-between">
                     <p className="text-[12px] font-semibold text-zinc-900">

@@ -13,7 +13,7 @@ export function UsageMeter({ used, limit }: Props) {
     ? "bg-rose-500"
     : isWarning
       ? "bg-amber-500"
-      : "bg-emerald-500";
+      : "bg-rose-300";
 
   return (
     <div className="rounded-xl border border-zinc-200 bg-white px-4 py-3 shadow-sm">

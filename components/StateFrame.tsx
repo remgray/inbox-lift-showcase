@@ -18,19 +18,19 @@ export function StateFrame({ state, children, wide = false }: Props) {
     >
       <Link
         href="/"
-        className="text-xs font-medium tracking-widest text-emerald-200/60 uppercase transition hover:text-emerald-300"
+        className="text-xs font-medium tracking-widest text-rose-200/60 uppercase transition hover:text-rose-300"
       >
         ← All scenes
       </Link>
 
       <header className="mt-8 mb-10">
-        <p className="font-mono text-xs tracking-widest text-emerald-400/80 uppercase">
+        <p className="font-mono text-xs tracking-widest text-rose-400/80 uppercase">
           № {state.index} · {state.surface}
         </p>
-        <h1 className="mt-2 text-4xl font-semibold tracking-tight text-emerald-50">
+        <h1 className="mt-2 text-4xl font-semibold tracking-tight text-rose-50">
           {state.label}
         </h1>
-        <p className="mt-3 max-w-2xl text-sm leading-relaxed text-emerald-200/60">
+        <p className="mt-3 max-w-2xl text-sm leading-relaxed text-rose-200/60">
           {state.blurb}
         </p>
       </header>

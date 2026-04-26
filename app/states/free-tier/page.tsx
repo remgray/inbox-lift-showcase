@@ -17,7 +17,7 @@ export default function FreeTierPage() {
 
           <div className="flex items-center justify-between border-b border-zinc-200 bg-white px-4 py-2 text-xs">
             <span className="font-medium text-zinc-500">Recent drafts</span>
-            <button className="font-semibold text-emerald-600 hover:text-emerald-700">
+            <button className="font-semibold text-rose-600 hover:text-rose-700">
               View all →
             </button>
           </div>
@@ -26,7 +26,7 @@ export default function FreeTierPage() {
             <RecentDrafts limit={3} />
           </div>
 
-          <div className="border-t border-zinc-200 bg-gradient-to-r from-emerald-50 to-teal-50 px-4 py-3">
+          <div className="border-t border-zinc-200 bg-gradient-to-r from-rose-50 to-pink-50 px-4 py-3">
             <div className="flex items-center justify-between gap-3">
               <div>
                 <p className="text-[12px] font-semibold text-zinc-900">
@@ -36,7 +36,7 @@ export default function FreeTierPage() {
                   Pro · $9 / mo · cancel anytime
                 </p>
               </div>
-              <button className="rounded-md bg-emerald-500 px-3 py-1.5 text-[11px] font-semibold text-white shadow-sm transition hover:bg-emerald-600">
+              <button className="rounded-md bg-rose-500 px-3 py-1.5 text-[11px] font-semibold text-white shadow-sm transition hover:bg-rose-600">
                 Upgrade
               </button>
             </div>

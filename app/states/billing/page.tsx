@@ -22,7 +22,7 @@ export default function BillingPage() {
       <div className="w-full max-w-4xl rounded-2xl border border-white/10 bg-white p-10 text-zinc-900 shadow-[0_30px_80px_-20px_rgba(0,0,0,0.55)]">
         <header className="mb-8 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <span className="block h-2.5 w-2.5 rounded-full bg-emerald-500" />
+            <span className="block h-2.5 w-2.5 rounded-full bg-rose-500" />
             <h2 className="text-xl font-semibold">InboxLift · Billing</h2>
           </div>
           <span className="font-mono text-xs tracking-wider text-zinc-400 uppercase">
@@ -31,7 +31,7 @@ export default function BillingPage() {
         </header>
 
         {/* Current plan */}
-        <section className="mb-8 rounded-xl border border-emerald-200 bg-gradient-to-br from-emerald-50 to-teal-50/50 p-5">
+        <section className="mb-8 rounded-xl border border-rose-200 bg-gradient-to-br from-rose-50 to-pink-50/50 p-5">
           <div className="flex items-start justify-between gap-4">
             <div>
               <div className="flex items-center gap-2">
@@ -71,7 +71,7 @@ export default function BillingPage() {
             </div>
             <div className="flex items-center gap-3 text-[11px] text-zinc-500">
               <span className="inline-flex items-center gap-1">
-                <span className="block h-2 w-2 rounded-full bg-emerald-500" />
+                <span className="block h-2 w-2 rounded-full bg-rose-500" />
                 drafts
               </span>
               <span>peak: 12</span>
@@ -81,7 +81,7 @@ export default function BillingPage() {
             {usage.map((v, i) => (
               <div
                 key={i}
-                className="flex-1 rounded-sm bg-emerald-500/80 transition hover:bg-emerald-500"
+                className="flex-1 rounded-sm bg-rose-500/80 transition hover:bg-rose-500"
                 style={{ height: `${(v / max) * 80}px` }}
                 title={`Day ${i + 1}: ${v} drafts`}
               />
@@ -93,7 +93,7 @@ export default function BillingPage() {
         <section>
           <div className="mb-3 flex items-end justify-between">
             <h3 className="text-sm font-semibold">Invoice history</h3>
-            <button className="text-[11px] font-semibold text-emerald-600 hover:text-emerald-700">
+            <button className="text-[11px] font-semibold text-rose-600 hover:text-rose-700">
               Download all →
             </button>
           </div>
@@ -119,13 +119,13 @@ export default function BillingPage() {
                       {inv.amount}
                     </td>
                     <td className="px-4 py-2.5">
-                      <span className="inline-flex items-center gap-1 rounded-full bg-emerald-50 px-2 py-0.5 text-[10px] font-medium text-emerald-700">
-                        <span className="block h-1.5 w-1.5 rounded-full bg-emerald-500" />
+                      <span className="inline-flex items-center gap-1 rounded-full bg-rose-50 px-2 py-0.5 text-[10px] font-medium text-rose-700">
+                        <span className="block h-1.5 w-1.5 rounded-full bg-rose-500" />
                         {inv.status}
                       </span>
                     </td>
                     <td className="px-4 py-2.5 text-right">
-                      <button className="text-[11px] font-medium text-emerald-600 hover:text-emerald-700">
+                      <button className="text-[11px] font-medium text-rose-600 hover:text-rose-700">
                         Download →
                       </button>
                     </td>

@@ -28,10 +28,10 @@ export function RecentDrafts({ limit = drafts.length }: { limit?: number }) {
       {drafts.slice(0, limit).map((d) => (
         <li
           key={d.subject}
-          className="group cursor-pointer rounded-xl border border-zinc-200/70 bg-white p-3 transition hover:border-emerald-300 hover:shadow-sm"
+          className="group cursor-pointer rounded-xl border border-zinc-200/70 bg-white p-3 transition hover:border-rose-300 hover:shadow-sm"
         >
           <div className="flex items-start gap-3">
-            <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-emerald-50 text-[10px] font-semibold text-emerald-700">
+            <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-rose-50 text-[10px] font-semibold text-rose-700">
               {d.initials}
             </div>
             <div className="flex-1 overflow-hidden">

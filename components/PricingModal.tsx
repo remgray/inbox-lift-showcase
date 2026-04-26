@@ -49,7 +49,7 @@ export function PricingModal() {
     <div className="rounded-2xl border border-white/10 bg-white p-6 text-zinc-900 shadow-[0_30px_80px_-20px_rgba(0,0,0,0.55)] ring-1 ring-black/5">
       <div className="w-[520px]">
         <header className="mb-5 text-center">
-          <p className="font-mono text-[10px] tracking-widest text-emerald-600 uppercase">
+          <p className="font-mono text-[10px] tracking-widest text-rose-600 uppercase">
             Plans
           </p>
           <h2 className="mt-1 text-xl font-semibold text-zinc-900">
@@ -67,12 +67,12 @@ export function PricingModal() {
               className={
                 "relative rounded-xl border p-4 " +
                 (p.highlight
-                  ? "border-emerald-300 bg-emerald-50/40 shadow-sm"
+                  ? "border-rose-300 bg-rose-50/40 shadow-sm"
                   : "border-zinc-200 bg-white")
               }
             >
               {p.badge && (
-                <span className="absolute -top-2.5 left-1/2 -translate-x-1/2 rounded-full bg-emerald-500 px-2 py-0.5 text-[9px] font-bold tracking-widest text-white uppercase">
+                <span className="absolute -top-2.5 left-1/2 -translate-x-1/2 rounded-full bg-rose-500 px-2 py-0.5 text-[9px] font-bold tracking-widest text-white uppercase">
                   {p.badge}
                 </span>
               )}
@@ -102,7 +102,7 @@ export function PricingModal() {
                         strokeWidth="2.5"
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        className="mt-0.5 shrink-0 text-emerald-500"
+                        className="mt-0.5 shrink-0 text-rose-500"
                       >
                         <polyline points="20 6 9 17 4 12" />
                       </svg>
@@ -137,7 +137,7 @@ export function PricingModal() {
                 className={
                   "mt-4 w-full rounded-md px-3 py-2 text-xs font-semibold transition " +
                   (p.ctaStyle === "primary"
-                    ? "bg-emerald-500 text-white shadow-sm hover:bg-emerald-600"
+                    ? "bg-rose-500 text-white shadow-sm hover:bg-rose-600"
                     : "border border-zinc-200 text-zinc-500")
                 }
                 disabled={p.ctaStyle === "outline"}
