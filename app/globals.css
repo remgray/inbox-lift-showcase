@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+}
+
+html, body {
+  background:
+    radial-gradient(1200px 600px at 80% -10%, rgba(16, 185, 129, 0.14), transparent 60%),
+    radial-gradient(900px 500px at 0% 100%, rgba(5, 150, 105, 0.10), transparent 60%),
+    linear-gradient(180deg, #07120E 0%, #0C1D17 100%);
+  background-attachment: fixed;
+  color: #ECFDF5;
+  min-height: 100vh;
+  font-feature-settings: "rlig" 1, "calt" 1, "ss01" 1;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
